@@ -6,7 +6,7 @@
 	@foreach($todos as $todo)
 		<div class="card mb-2">
 			<span class="badge-box badge-danger text-center">{{ $todo->due }}</span>
-			<h3 class="card-body">{{ $todo->text }} </h3>
+			<h3 class="card-body"><a href="todo/{{$todo->id}}">{{ $todo->text }}</a></h3>
 			
 		</div>
 	@endforeach
